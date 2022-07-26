@@ -26,9 +26,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    QMK
 #define PRODUCT         QMK USB-USB Converter
 
+//#define TAPPING_TERM 250
+
+//#define ONESHOT_TAP_TOGGLE 5  /* Tapping this number of times holds the key until tapped once again. */
+//#define ONESHOT_TIMEOUT 5000  /* Time (in ms) before the one shot key is released */
+
 /* size of virtual matrix */
 #define MATRIX_ROWS 16
 #define MATRIX_COLS 16
+
+// https://docs.qmk.fm/#/squeezing_avr
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
+//#define NO_ACTION_ONESHOT
+#define LAYER_STATE_8BIT
 
 /*
  * Feature disable options
