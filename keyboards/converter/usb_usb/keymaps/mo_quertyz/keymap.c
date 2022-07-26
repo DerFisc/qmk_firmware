@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* sources:
 https://github.com/kingdase/hasu-usb-usb-neo/blob/master/qmk/keymap.c
 https://docs.qmk.fm/#/squeezing_avr
+https://thomasbaart.nl/2018/12/01/reducing-firmware-size-in-qmk/
 https://www.neo-layout.org/Benutzerhandbuch/Tastaturbelegung/
 https://eurkey.steffen.bruentjen.eu/layout.html
 https://geekhack.org/index.php?topic=69169.0
@@ -27,6 +28,18 @@ https://docs.qmk.fm/#/one_shot_keys
 https://docs.qmk.fm/#/feature_layers
 https://docs.qmk.fm/#/keycodes
 https://docs.qmk.fm/#/keycodes_us_ansi_shifted
+https://docs.qmk.fm/#/feature_key_overrides
+not used:https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
+https://github.com/qmk/qmk_firmware/blob/c6850bad74ccec3cec0af1c74eb20b139d0ca481/quantum/keymap_extras/keymap_german.h#L66
+https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/
+
+https://github.com/qmk/qmk_firmware/blob/master/docs/isp_flashing_guide.md
+https://github.com/qmk/qmk_firmware/tree/master/keyboards/converter/usb_usb
+https://www.pjrc.com/teensy/td_libs_USBHostShield.html
+https://esp8266-notes.blogspot.com/2017/08/how-to-convert-usb-host-mini-board-to-5v.html
+https://geekhack.org/index.php?topic=80421.0
+https://geekhack.org/index.php?topic=72052.0
+https://github.com/avrdudes/avrdude
 
 Layout in OS is expected to be Eurokey
 US International might work as well with some special characters not working
@@ -51,7 +64,7 @@ compile with qmk compile -km mo_quertyz
 flash with .\avrdude.exe -p m32u4 -P com7 -c avr109 -U flash:w:converter_usb_usb_pro_micro_mo_test.hex
 and grave + 0 key for bootloader mode
 
-
+is on branch quertzy_neo
 */
 
 
