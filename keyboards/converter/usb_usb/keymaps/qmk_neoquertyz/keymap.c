@@ -32,6 +32,7 @@ https://docs.qmk.fm/#/feature_key_overrides
 not used:https://getreuer.info/posts/keyboards/custom-shift-keys/index.html
 https://github.com/qmk/qmk_firmware/blob/c6850bad74ccec3cec0af1c74eb20b139d0ca481/quantum/keymap_extras/keymap_german.h#L66
 https://thomasbaart.nl/2018/12/09/qmk-basics-tap-and-hold-actions/
+not used:https://gist.github.com/tmk/70babc152e09f102396dc0a621c8d66a
 
 https://github.com/qmk/qmk_firmware/blob/master/docs/isp_flashing_guide.md
 https://github.com/qmk/qmk_firmware/tree/master/keyboards/converter/usb_usb
@@ -40,6 +41,8 @@ https://esp8266-notes.blogspot.com/2017/08/how-to-convert-usb-host-mini-board-to
 https://geekhack.org/index.php?topic=80421.0
 https://geekhack.org/index.php?topic=72052.0
 https://github.com/avrdudes/avrdude
+https://git.neo-layout.org/neo/neo-layout/issues/531
+https://yaowei.dev/posts/usb-to-usb-converter
 
 Layout in OS is expected to be Eurokey
 US International might work as well with some special characters not working
@@ -59,7 +62,14 @@ https://gist.github.com/weilbith/26cdac334c2fd76d5ed26adf10fa826c
 https://docs.qmk.fm/#/feature_tap_dance?id=example-5-using-tap-dance-for-advanced-mod-tap-and-layer-tap-keys
 lead keys https://docs.qmk.fm/#/feature_leader_key
 more one shot keys
+change win key for sway; modifier keys on buchstaben
+https://maximilian-schillinger.de/modifier.html
+autoshift?
 
+semicolon on hold becomes ctrl and when tapped regular semicolon
+Mapped capslock to work as esc when pressed once and ctrl when held down.
+
+Compilation:
 compile with qmk compile -km mo_quertyz
 flash with .\avrdude.exe -p m32u4 -P com7 -c avr109 -U flash:w:converter_usb_usb_pro_micro_mo_test.hex
 and grave + 0 key for bootloader mode
