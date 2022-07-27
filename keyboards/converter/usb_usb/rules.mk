@@ -24,6 +24,7 @@ LTO_ENABLE = yes
 #EXTRAFLAGS+= -mcall-prologues
 
 TAP_DANCE_ENABLE = no
+# AUTO_SHIFT_ENABLE = yes
 
 GRAVE_ESC_ENABLE = no 
 MAGIC_ENABLE = no
